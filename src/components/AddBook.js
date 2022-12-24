@@ -19,7 +19,6 @@ const AddBook = () => {
             ...prevState,
             [e.target.name]: e.target.value,
         }));
-        // console.log(e.target.name,"Value",e.target.value);
     };
 
     const sendRequest = async () => {
