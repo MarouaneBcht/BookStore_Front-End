@@ -25,6 +25,7 @@ const themeDark = createTheme({
 });
 
 const Header = () => {
+
     const [value, setValue] = useState();
     const [light, setLight] = React.useState(true);
     return (
@@ -33,9 +34,9 @@ const Header = () => {
                 <CssBaseline />
                 <AppBar sx={{ backgroundColor: 'black' }} position='sticky'>
                     <Toolbar>
-                <Button onClick={() => setLight((prev) => !prev)} >
-                    <Typography variant="h6" color="lightblue"  >Theme</Typography>
-                </Button>
+                        <Button onClick={() => setLight((prev) => !prev)} >
+                            <Typography variant="h6" color="lightblue"  >Theme</Typography>
+                        </Button>
                         <NavLink to="/" style={{ color: "white" }}>
                             <Typography>
                                 <LibraryBooksIcon />
@@ -45,6 +46,7 @@ const Header = () => {
                             <Tab LinkComponent={NavLink} to="/add" label='Add product' />
                             <Tab LinkComponent={NavLink} to="/books" label='Books' />
                             <Tab LinkComponent={NavLink} to="/about" label='About Us' />
+                            <Tab LinkComponent={NavLink} to="/account" label='Account' />
                         </Tabs>
                     </Toolbar>
                 </AppBar>

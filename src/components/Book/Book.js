@@ -20,8 +20,8 @@ const Book = (props) => {
             <h3>{name}</h3>
             <p>{description}</p>
             <h3>{price} DH</h3>
-            <Button LinkComponent={Link} to={`/books/${_id}`} sx={{ mt: 'auto' }}>Update</Button>
-            <Button onClick={deleteHandler} sx={{ mt: 'auto' }} LinkComponent={Link} to="http://localhost:3000/books">Delete</Button>
+            <Button LinkComponent={Link} to={`/books/${_id}`} sx={{ mt: 'auto' }}><h3>Update</h3></Button>
+            <Button onClick={deleteHandler} sx={{ mt: 'auto' }} LinkComponent={Link} to="http://localhost:3000/books"><h4>Delete</h4></Button>
         </div>
     );
 };
